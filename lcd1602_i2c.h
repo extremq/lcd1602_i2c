@@ -39,7 +39,6 @@
 #ifndef __LCD1602_I2C_H
 #define __LCD1602_I2C_H
 
-#include <stdio.h>
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
 
