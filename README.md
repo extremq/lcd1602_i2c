@@ -3,7 +3,7 @@ A simple, lightning-fast and scalable I2C-based implementation of the HD44780U 1
 
 # Features
 - Very efficient
-  - Used the datasheet to provide minimal sleep times. On average, the display needs to sleep 80 microseconds for each command
+  - Used the datasheet to provide minimal sleep times. On average, the display needs to sleep 160 microseconds for each command
   - Sends only the minimum amount of bytes necessary.
 - Can be used to control multiple HD44780U 1602 LCDs.
   - Just create an LCD object and use its address for each call.
