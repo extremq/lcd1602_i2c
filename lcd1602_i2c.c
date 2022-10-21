@@ -70,7 +70,7 @@ void lcd_init(LCD* lcd_inst, int address, uint8_t pin_sda, uint8_t pin_scl, i2c_
     lcd_inst->pin_scl = pin_scl;
 
     lcd_inst->status.cursor_dir = 1; /* LCD_ENTRYLEFT */
-    lcd_inst->status.cursor_on = 1; /* LCD_CURSORON */
+    lcd_inst->status.cursor_on = 0; /* LCD_CURSORON */
     lcd_inst->status.display_on = 1; /* LCD_DISPLAYON */
     lcd_inst->status.display_shift = 0;
     lcd_inst->status.blinking_on = 0; /* LCD_BLINKON */
@@ -92,6 +92,8 @@ void lcd_init(LCD* lcd_inst, int address, uint8_t pin_sda, uint8_t pin_scl, i2c_
     lcd_send_byte(lcd_inst, LCD_ENTRYMODESET, LCD_COMMAND_MODE, FAST_DELAY);
     lcd_send_byte(lcd_inst, LCD_FUNCTIONSET | LCD_2LINE, LCD_COMMAND_MODE, FAST_DELAY);
     lcd_send_byte(lcd_inst, LCD_DISPLAYCONTROL, LCD_COMMAND_MODE, FAST_DELAY);
+
+    sleep_ms(1);
 
     lcd_clear(lcd_inst);
 }
