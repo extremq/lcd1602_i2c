@@ -10,7 +10,7 @@ A simple, lightning-fast and scalable I2C-based implementation of the HD44780U 1
   - For example `lcd_char(&lcd_1, 'a'); lcd_char(&lcd_2, 'b');`.
 - Heavily documented code.
   - Made sure to reference pages in the original datasheet.
-  - Explained functions, variables and protocol. (Had to reverse engineer popular libraries, literally no documentation is provided for the SPI interface)
+  - Explained functions, variables and protocol. (Had to reverse engineer popular libraries, literally no documentation is provided for the I2C interface)
 
 
 # How to install the module (for beginners)
