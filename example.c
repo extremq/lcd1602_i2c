@@ -24,13 +24,13 @@ int main() {
     sleep_ms(1000);
     lcd_set_cursor_pos(&my_lcd, 1, 6);
     sleep_ms(1000);
-    lcd_show_cursor(&my_lcd, false); // Hide the cursor
+    lcd_show_cursor(&my_lcd, true); // Show the cursor
     sleep_ms(1000);
     lcd_set_blinking(&my_lcd, true); // Blink the character
     sleep_ms(1000);
     lcd_set_blinking(&my_lcd, false);
     sleep_ms(1000);
-    lcd_show_cursor(&my_lcd, true);
+    lcd_show_cursor(&my_lcd, false);
     sleep_ms(1000);
     lcd_string(&my_lcd, message[2]);
     sleep_ms(1000);
