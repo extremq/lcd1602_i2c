@@ -1,6 +1,8 @@
 # lcd1602_i2c
 A simple, lightning-fast and scalable I2C-based implementation of the HD44780U 1602 LCD with I2C interface in C using the Raspberry Pi Pico SDK.
 
+![](https://i.imgur.com/s03eaDj.jpeg)
+
 # Features
 - Very efficient
   - Used the datasheet to provide minimal sleep times. On average, the display needs to sleep 160 microseconds for each command
